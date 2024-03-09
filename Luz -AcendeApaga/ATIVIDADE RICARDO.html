@@ -1,0 +1,52 @@
+<html>
+    <title>Site Ricardo</title>
+    <body>
+        <div>
+            <table align="center" id="tabela">
+                <tr>
+                    <td>
+                    Bem Vindo Ao Site
+                    </td>
+                </tr>
+             <tr>
+                    <td>
+                         <IMG id="imagem" src="laap.PNG">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button id="botaoAc">Acender</button>
+                        <button id="botaoAp">Apagar</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </body>
+
+</html>
+
+
+<style>
+    #tabela tr td{
+        text-align: center;
+    }
+</style>
+
+<script>
+    var botaoAc = document.querySelector("#botaoAc");
+    botaoAc.addEventListener("click" , trocarAc);
+    function trocarAc(){
+        document.getElementById("imagem").src = "laac.png"
+    }
+
+    var botaoAp = document.querySelector("#botaoAp");
+    botaoAp.addEventListener("click" , trocarDo);
+    function trocarDo(){
+        document.getElementById("imagem").src = "laap.png"
+    }
+
+
+
+
+
+</script>
